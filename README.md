@@ -33,21 +33,36 @@ This project demonstrates the use of utility functions for addition, multiplicat
    python main.py
    ```
 
-## Example Usage
+## Example Input and Output
+
+**Example Input:**
 ```
-Enter a number: 5
+Enter a number: 1
 Enter a number: 3
+Enter a number (or type 'done' to finish): 5
 Enter a number (or type 'done' to finish): done
-Initial numbers: [5, 3]
-Initial sum: 8
-Numbers before multiplication: [5, 3]
-Initial multiplication: 15
+```
+
+**Example Output:**
+```
+Initial numbers: [1, 3, 5]
+Initial sum: 9
+The sum is odd (1 attempt(s)). Adding sum to the list and retrying.
+Numbers after adding sum: [1, 3, 5, 9]
+New sum: 18
+Numbers before multiplication: [1, 3, 5, 9]
+Initial multiplication: 135
 The multiplication is odd (1 attempt(s)). Adding multiplication to the list and retrying.
-Numbers after adding multiplication: [5, 3, 15]
-New multiplication: 225
-...
-Numbers before division: [5, 3, 15, ...]
-Division result (first number divided by last): ...
+Numbers after adding multiplication: [1, 3, 5, 9, 135]
+New multiplication: 18225
+The multiplication is odd (2 attempt(s)). Adding multiplication to the list and retrying.
+Numbers after adding multiplication: [1, 3, 5, 9, 135, 18225]
+New multiplication: 3320625
+The multiplication is odd (3 attempt(s)). Adding multiplication to the list and retrying.
+Numbers after adding multiplication: [1, 3, 5, 9, 135, 18225, 3320625]
+New multiplication: 11068706250
+Numbers before division: [1, 3, 5, 9, 135, 18225, 3320625]
+Division result (first number divided by last): 3.032961229293477e-07
 ```
 
 ## Notes
