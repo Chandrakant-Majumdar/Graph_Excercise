@@ -53,6 +53,3 @@ Division result (first number divided by last): ...
 ## Notes
 - The program handles invalid input gracefully.
 - The logic for odd/even checks and retries is capped at 3 attempts for both sum and multiplication.
-
-## License
-MIT License
