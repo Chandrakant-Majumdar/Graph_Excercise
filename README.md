@@ -34,61 +34,34 @@ This project demonstrates the use of utility functions for addition, multiplicat
    python main.py
    ```
 
-## Example Input and Output
-
-**Example Input:**
+## Example Usage
 ```
-<<<<<<< HEAD
 Enter a number (at least two numbers required): 5
 Enter a number (at least two numbers required): 3
 Enter a number (or type 'done' to finish): done
+
+# Addition Step
 Initial numbers: [5, 3]
 Initial sum: 8
+The sum is even. Proceeding to multiplication step.
+
+# Multiplication Step
 Numbers before multiplication: [5, 3]
 Initial multiplication: 15
 The multiplication is odd (1 attempt(s)). Adding a random number to the list and retrying.
 Numbers after adding random number 7: [5, 3, 7]
 New multiplication: 105
-...
-Numbers before division: [5, 3, 7, ...]
-Division result (first number divided by last): ...
-```
+The multiplication is odd (2 attempt(s)). Adding a random number to the list and retrying.
+Numbers after adding random number 2: [5, 3, 7, 2]
+New multiplication: 210
+The multiplication is even. Proceeding to division step.
+
+# Division Step
+Numbers before division: [5, 3, 7, 2]
+Division result (first number divided by last): 2.5
 
 ## Notes
 - The program handles invalid input gracefully and enforces at least two numbers before proceeding.
 - Odd/even checks for sum and multiplication are capped at 3 attempts, with random numbers (0-9) appended each time if needed.
 - Division by zero is handled with a clear error message if attempted.
 
-=======
-Enter a number: 1
-Enter a number: 3
-Enter a number (or type 'done' to finish): 5
-Enter a number (or type 'done' to finish): done
-```
-
-**Example Output:**
-```
-Initial numbers: [1, 3, 5]
-Initial sum: 9
-The sum is odd (1 attempt(s)). Adding sum to the list and retrying.
-Numbers after adding sum: [1, 3, 5, 9]
-New sum: 18
-Numbers before multiplication: [1, 3, 5, 9]
-Initial multiplication: 135
-The multiplication is odd (1 attempt(s)). Adding multiplication to the list and retrying.
-Numbers after adding multiplication: [1, 3, 5, 9, 135]
-New multiplication: 18225
-The multiplication is odd (2 attempt(s)). Adding multiplication to the list and retrying.
-Numbers after adding multiplication: [1, 3, 5, 9, 135, 18225]
-New multiplication: 3320625
-The multiplication is odd (3 attempt(s)). Adding multiplication to the list and retrying.
-Numbers after adding multiplication: [1, 3, 5, 9, 135, 18225, 3320625]
-New multiplication: 11068706250
-Numbers before division: [1, 3, 5, 9, 135, 18225, 3320625]
-Division result (first number divided by last): 3.032961229293477e-07
-```
-
-## Notes
-- The program handles invalid input gracefully.
-- The logic for odd/even checks and retries is capped at 3 attempts for both sum and multiplication.
->>>>>>> 1e7f3d35b15a9da00658525bd5df45e773fe5758
