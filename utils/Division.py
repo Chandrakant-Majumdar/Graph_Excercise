@@ -5,5 +5,9 @@ def division(nums: list):
         nums (list): A list of numbers where the first number is the dividend and the rest are divisors.
     Returns:
         float: The result of the division.
+    Raises:
+        ZeroDivisionError: If the last number is zero.
     """
-    return nums[0]/nums[len(nums)-1]
+    if nums[-1] == 0:
+        raise ZeroDivisionError("Cannot divide by zero (last number in list is zero).")
+    return nums[0]/nums[-1]
